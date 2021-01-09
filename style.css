@@ -60,39 +60,60 @@ img:nth-child(2){
 img{
     height: 20px;
 }
-.card:first-of-type{
+.card{
     position: absolute;
     left: 50px;
     top: 150px;
+}
+
+.card:first-of-type{
+
     z-index: 1;
     transform-origin: 50% 100%;
     transform: rotate(-10deg);
 }
 .card:last-of-type{
-    position: absolute;
-    left: 50px;
-    top: 150px;
+
     transform: rotate(12deg);
     z-index: 3;
     transform-origin: 50% 100%;
 }
 .card:nth-child(2){
-    position: absolute;
-    left: 50px;
-    top: 150px;
+
     transform: rotate(2deg);
     z-index: 2;
     transform-origin: 50% 100%;
 }
-.card:first-of-type:hover{
+.card:nth-child(3){
+    transform: rotate(24deg);
+    z-index: 4;
+    transform-origin: 50% 100%;
+}
+
+.card:nth-child(4){
+
+    transform: rotate(36deg);
+    z-index: 5;
+    transform-origin: 50% 100%;
+}
+.card:hover{
     transition: 0.7s;
+}
+
+.card:first-of-type:hover{
     transform: translateY(-15px) rotate(-10deg) scale(1.04);
 }
 .card:last-of-type:hover{
-    transition: 0.7s;
+
     transform: translateY(-15px) rotate(12deg) scale(1.06);
 }
 .card:nth-child(2):hover{
-    transition: 0.7s;
     transform: translateY(-15px) rotate(2deg) scale(1.06);
+}
+
+.card:nth-child(3):hover{
+    transform: translateY(-15px) rotate(24deg) scale(1.06);
+}
+.card:nth-child(4):hover{
+    transform: translateY(-15px) rotate(36deg) scale(1.06);
 }
